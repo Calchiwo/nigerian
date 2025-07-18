@@ -1,15 +1,37 @@
-/* styles.css */
 body {
-    font-family: 'Roboto', sans-serif; /* Simple, rich font */
-    background-color: white; /* White background 🤍 */
-    color: black; /* Black text 🖤 */
-    text-align: center; /* Center content for simplicity */
-    margin: 0; /* Remove default margins */
-    padding: 20px; /* Add some spacing */
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 }
-
 h1 {
-    color: blue; /* Blue header 💙 */
-    font-size: 2em; /* Larger text for emphasis */
-    margin-bottom: 20px; /* Space below header */
+    color: blue;
+    font-size: 1.5em;
+}
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+}
+input, button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+}
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+}
+a {
+    color: blue;
+}
+@media (min-width: 768px) {
+    h1 { font-size: 2em; }
+    input, button { width: 50%; }
 }
